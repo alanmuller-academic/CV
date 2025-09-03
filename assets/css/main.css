@@ -1685,12 +1685,22 @@ input, select, textarea {
 
 /* Custom initials logo */
 .logo .initials {
-  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: transparent;          /* no background */
+  color: #ffffff;                   /* white text */
   font-family: 'Arial Black', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  border-radius: 50%;               /* circle */
+  border: 2px solid #ffffff;        /* white outline */
   text-transform: uppercase;
 }
+
+
 
 
 

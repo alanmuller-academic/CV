@@ -1685,9 +1685,18 @@ input, select, textarea {
 
 /* Custom initials logo */
 .logo .initials {
-  font-family: 'Arial Black', sans-serif; /* strong, bold type */
-  font-size: 2rem; /* adjust size to taste */
-  color: #ffffff; /* white, or pick your colour */
-  line-height: 1;
-  display: inline-block;
+  display: inline-flex;           /* keeps text centred */
+  justify-content: center;
+  align-items: center;
+  width: 60px;                    /* circle size */
+  height: 60px;
+  background: #000000;            /* black circle (adjust if you want another colour) */
+  color: #ffffff;                 /* white text */
+  font-family: 'Arial Black', sans-serif;
+  font-size: 1.5rem;              /* adjust size as needed */
+  font-weight: bold;
+  border-radius: 50%;             /* makes it circular */
+  text-transform: uppercase;      /* ensures AM is capitalised */
 }
+
+

@@ -1695,26 +1695,9 @@ input, select, textarea {
   font-family: 'Arial Black', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 50%;               /* circle */
-  border: 2px solid #ffffff;        /* white outline */
   text-transform: uppercase;
 }
 
-/* Remove white circle background around initials */
-#header .logo {
-  background: none !important;
-  border: none !important;
-}
-
-#header .logo:before,
-#header .logo:after {
-  display: none !important;
-}
-
-#header .logo .initials {
-  background: none !important;
-  border: none !important;
-}
 
 
 

@@ -1700,6 +1700,22 @@ input, select, textarea {
   text-transform: uppercase;
 }
 
+/* Remove white circle background around initials */
+#header .logo {
+  background: none !important;
+  border: none !important;
+}
+
+#header .logo:before,
+#header .logo:after {
+  display: none !important;
+}
+
+#header .logo .initials {
+  background: none !important;
+  border: none !important;
+}
+
 
 
 

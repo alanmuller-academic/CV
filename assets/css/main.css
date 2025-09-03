@@ -1746,4 +1746,76 @@ input, select, textarea {
 
 /* === Black background everywhere (no image layers) === */
 html, body { background: #000 !important; }
-#bg, #bg:before, #bg:after { background: #000 !important; }
+#bg, #bg:before, #bg:after { background: #000 !important; 
+}
+
+/* CONTACT ICONS — override template circles & layout */
+#contact .icons {
+  display: flex;
+  justify-content: flex-start;   /* or center */
+  gap: 1.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+#contact .icons li {
+  display: flex;
+  flex-direction: column;        /* label under icon */
+  align-items: center;
+}
+
+/* kill the template's circular badges */
+#contact .icons li a,
+#contact .icons li a:before,
+#contact .icons li a:after {
+  width: auto !important;
+  height: auto !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+#contact .icons li a:before,
+#contact .icons li a:after {
+  display: none !important;      /* removes the ring */
+}
+
+/* actual icon appearance */
+#contact .icons svg {
+  width: 32px;                   /* adjust size */
+  height: 32px;
+  fill: #fff;                    /* make icons white */
+  display: block;
+}
+
+/* label style */
+#contact .icons .label {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #cfd3d6;                /* softer white */
+  text-align: center;
+}
+
+<ul class="icons">
+  <li>
+    <a href="mailto:alan.muller@up.ac.za" target="_blank" rel="noopener" aria-label="Email">
+      <!-- envelope SVG -->
+      <svg ...>…</svg>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://orcid.org/0000-0002-2913-2109" target="_blank" rel="noopener" aria-label="ORCID">
+      <!-- ORCID SVG -->
+      <svg ...>…</svg>
+      <span class="label">ORCID</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://scholar.google.com/citations?user=6JNZAgQAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+      <!-- cap SVG -->
+      <svg ...>…</svg>
+      <span class="label">Google Scholar</span>
+    </a>
+  </li>
+</ul>
